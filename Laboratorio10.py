@@ -59,7 +59,11 @@ def std_arreglo(p) :
 	des = (sx/n)**(1/2)
 	return des
 
-
+def norm_arreglo(p):
+	prom = mean_arreglo(p)
+	des = std_arreglo(p)
+	for i in range(0,n):
+		p[i] = (p[i]-prom)/des
 
 
     
