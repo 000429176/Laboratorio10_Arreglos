@@ -14,14 +14,14 @@ def a_power_b(a,b):
     contP = 0
     ContPar = 0
     ContImp = 0
- 
-        
+    a = int(a)
+    b = int(b)
 #En caso de que b sea negativo la potencia sería 1/a**b, por tanto se utiliza el condicional b<0 para identificar si b es negativo. La variable c representa la potencia normal y la variable d el resultado final
         
     if b<0 :
             c = 1
             b = b*-1
-            for i in range(1, b+1):
+            for i in range(0, b):
                 c = (c)*a
             c = 1/c
             
@@ -29,7 +29,7 @@ def a_power_b(a,b):
         
     else: 
             c = 1
-            for i in range(1, b+1):
+            for i in range(0, b):
                 c = (c)*a
     contP += 1
         
@@ -67,7 +67,14 @@ while n<5 :
 
 a = np.zeros([n])
 b = np.zeros([n])
+
 for i in range(0,n):
 	a[i]=int(input("ingrese a: "))
 	b[i]=int(input("ingrese b: "))
+
+e = mean_arreglo(a)
+d = mean_arreglo(b)
+
+a_power_b(e, d)   
+
 
