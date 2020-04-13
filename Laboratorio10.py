@@ -42,6 +42,21 @@ def a_power_b(a,b):
         
         
     print("Se calculron " + str(contP) + " potencias, " + str(ContPar) + " fueron pares " + " y " + str(ContImp) + " fueron impares")
+    
+
+def mean_arreglo(p) :
+	s = 0
+	for i in range(0,n):
+		s += p[i]
+	prom = s/n
+	return prom
+
+
+
+
+
+    
+    
 
 #----------------------------------Principal----------------------------------#
 
