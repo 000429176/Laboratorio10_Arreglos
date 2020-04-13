@@ -60,10 +60,12 @@ def std_arreglo(p) :
 	return des
 
 def norm_arreglo(p):
-	prom = mean_arreglo(p)
-	des = std_arreglo(p)
-	for i in range(0,n):
-		p[i] = (p[i]-prom)/des
+    prom = mean_arreglo(p)
+    des = std_arreglo(p)
+    for i in range(0,n):
+        p[i]=(p[i]-prom)/des
+    return p
+    
 
 
     
@@ -88,7 +90,14 @@ d = mean_arreglo(b)
 
 a_power_b(e, d)   
 
+print("La desviación del arreglo a es:", std_arreglo(a))
+print("La desviación del arreglo b es:", std_arreglo(b))
+
+print("El arreglo de a antes de la normalización es:", a)
+print("El arreglo de b antes de la normalización es:", b)
 
 
-print("La desviación del arreglo a es : "), print(std_arreglo(a))
-print("La desviación del arreglo b es : "), print(std_arreglo(b))
+print("El arreglo de a después de la normalización  es: ", norm_arreglo(a))
+print("El arreglo de b después de la normalización  es: ", norm_arreglo(b))
+
+
