@@ -85,3 +85,6 @@ d = mean_arreglo(b)
 a_power_b(e, d)   
 
 
+
+print("La desviación del arreglo a es : "), print(std_arreglo(a))
+print("La desviación del arreglo b es : "), print(std_arreglo(b))
