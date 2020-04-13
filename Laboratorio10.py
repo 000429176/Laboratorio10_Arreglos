@@ -51,12 +51,19 @@ def mean_arreglo(p) :
 	prom = s/n
 	return prom
 
+def std_arreglo(p) :
+	prom = mean_arreglo(p)
+	sx = 0
+	for i in range(0,n):
+		sx += (p[i]-prom)**2
+	des = (sx/n)**(1/2)
+	return des
 
 
 
 
     
-    
+
 
 #----------------------------------Principal----------------------------------#
 
