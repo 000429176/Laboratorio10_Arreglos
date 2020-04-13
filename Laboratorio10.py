@@ -100,4 +100,11 @@ print("El arreglo de b antes de la normalización es:", b)
 print("El arreglo de a después de la normalización  es: ", norm_arreglo(a))
 print("El arreglo de b después de la normalización  es: ", norm_arreglo(b))
 
+print("La desviación estándar de a despuúes de la normalización es:", round(std_arreglo(a)))
+print("La desviación estándar de b despuúes de la normalización es:",round(std_arreglo(b)))
+print("El promedio de a después de la normalización es:", round(abs(mean_arreglo(a))))
+print("El promedio de b después de la normalización es:", round(abs(mean_arreglo(b))))
+
+
+
 
